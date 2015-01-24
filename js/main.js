@@ -15,7 +15,7 @@ var quotes_array = ["My eyes! The goggles do nothing!",
 "Marge, I won't lie to you.",
 "I live in a single room above a bowling alley and below another bowling alley.",
 "Me fail english? That unpossible!",
-"Do you ever wonder why fat people have fat children? or why chinese people have chinese children?",
+"Do you ever wonder why fat people have fat children? Or why chinese people have chinese children?",
 "You're gonna have to speak up, I'm wearing a towel.",
 "They're the suckiest bunch of sucks that ever sucked!",
 "I used to be with it, but then they changed what it was. It'll happen to you!",
@@ -64,6 +64,10 @@ $("#lorem-ipsum").submit(function(){
   console.log(paragraphs);
 
   $("#text-field").empty().html(paragraphs);
+  document.getElementById("text-field").style.backgroundColor = "rgba(249, 250, 237, .5)";
+  document.getElementById("text-field").style.padding = "0px 10px 10px 10px";
+
+
 
   return false;
 
@@ -103,6 +107,7 @@ function makeWordsGoNow(words) {
   }
   return msg;
   alert(msg);
+
 };
 
 

@@ -113,10 +113,13 @@ textarea {
 
 #text-field {
   width: 1000px;
-  height: 500px;
+  height: 250px;
   overflow: scroll;
   margin: 0 auto;
   text-align: left;
+  margin: 350px 0 0 125px;
+  z-index: 1;
+  position: absolute;
 }
 
 header{
@@ -127,20 +130,48 @@ header{
   height: 200px;
   margin: 0 auto;
   text-align: center;
+  margin: 50px 0 0 350px;
+  padding: 25px 25px 25px 25px;
+  border: 1px solid black;
+  z-index: 2;
+  position: absolute;
 }
 
+header p{
+  text-align: left;
+}
 
-body{
+header img {
+  margin-top: 10px;
+}
+
+#clouds{
   background-image: url("http://img2.wikia.nocookie.net/__cb20101107201437/desperate/images/f/fc/Simpsons_clouds.jpg");
+  animation-duration: 5s;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
 }
 
+@keyframes scroll{
+  from {
+    width: 100%;
+  }
+  to {
+    width: 50%;
+  }
+}
 
 h1{
-  font-family: 'simpsonfontregular';
+  background-image: url("Lorem Simpsum.sv");
 }
 
-
-
+#lorem-ipusm {
+  text-align: left;
+}
 
 
 /* ==========================================================================
