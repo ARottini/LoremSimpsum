@@ -20,11 +20,21 @@ var quotes_array = ["My eyes! The goggles do nothing!",
 "They're the suckiest bunch of sucks that ever sucked!",
 "I used to be with it, but then they changed what it was. It'll happen to you!",
 "I call it, Billy and the Cloneasauras!",
+"I had to do a stupid Kabuki play about the 47 Ronin, I wanted to be Yoshi but they made me Ori.",
+"D'oh!",
+"Don't have a cow, man!",
+"Let the bears pay the bear tax! I pay the Homer tax!.",
+"Wow, my feet are soaked but my cuffs are bone dry! Everything's coming up Milhouse!",
+"MOMMMMM BART'S SMOKING",
+"This is America. That means you can eat whatever you want, as long as you eat too much of it.",
+"I swore off reading after To Kill A Mockingbird taught me nothing about killing mockingbirds!",
+"The fingers you have used to dial are too fat. To obtain a special dialing wand, please mash the keypad with your palm now.",
+"Am I out of touch? No, it's the children who are wrong!",
 "BART DO YOU WANT TO SEE MY NEW CHAINSAW AND HOCKEY MASK?",
 "Ahhhh, I just love these lazy Saturdays...",
 "Homer, are you wearing a tie to impress Laddie?",
 "I call the big one bitey!",
-"Hi Principal Skimster, hi Super Nintendo Chalmers!",
+"Hi Princenipal Skimster. Hi Super Nintendo Chalmers!",
 "I think it was called, The Bus that Couldn't Slow Down.",
 "And Homer, if you could kill someone on the way out, that would be a huge help.",
 "Hahaha dying tickles!"];
@@ -52,9 +62,7 @@ $("#lorem-ipsum").submit(function(){
       for (var c = 0; c < quotes_array.length-4; c++) {
         //For loop that builds
         var random_words = fisherYates(quotes_array);
-
-        var sentence = random_words.toString().replace(/,/g, ' ') + '. ';
-
+        var sentence = random_words.toString().replace(/,/g, ' ');
       }
       sentence_group += sentence;
 
@@ -63,10 +71,7 @@ $("#lorem-ipsum").submit(function(){
 
   console.log(paragraphs);
 
-  $("#text-field").empty().html(paragraphs);
-  document.getElementById("text-field").style.backgroundColor = "rgba(249, 250, 237, .5)";
-  document.getElementById("text-field").style.padding = "0px 10px 10px 10px";
-
+  $("#text-field").empty().html("<div id='quotes'>" + paragraphs + "</div>");
 
 
   return false;

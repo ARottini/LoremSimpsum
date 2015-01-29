@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Made by Oren Weingrod with serious help from open sourced code by Justin Kestler @ meowist.github.io
 
 # THANKS
 
-    <name>
+    I made this to see if I could still understand Javascript, and I got some serious help from open sourced Lorem Ipsum generator code by Justin Kestler @ meowist.github.io
 
 # TECHNOLOGY COLOPHON
 

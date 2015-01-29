@@ -6,14 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Lorem Simpsum | A Lorem Ipsum Generator for Simpsons Fans</title>
+        <meta name="description" content="A Lorem Ipsum generator for Simpsons Fans">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -22,31 +24,50 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="clouds"></div>
-        <header>
-          <img src="Lorem Simpsum.svg"></img>
-          <p>Lorem Simpsum is a Lorem Ipsum generator where all the words are quotes from The Simpsons.</p>
-          <form id="lorem-ipsum">
-            <p>Select how many paragraphs to generate:</p>
-            <select name="select" id="select">
-              <option value="1"> One paragraph </option>
-              <option value="2"> Two paragraphs </option>
-              <option value="3" selected> Three paragraphs </option>
-              <option value="4"> Four paragraphs </option>
-              <option value="5"> Five paragraphs </option>
-            </select>
-            <input type="submit" id="submit"></input>
-          </form>
+        <section>
+          <div class="container-fluid">
+              <img src="Lorem Simpsum.png" class="img-responsive"></img>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <p>Lorem Simpsum is a dummy text generator for fans of The Simpsons, made by <a href="http://www.oren.works">Oren Weingrod.</a>   </p> <br>
+                  <form id="lorem-ipsum">
+                    <span>Select how many paragraphs to generate:</span> <br> <br>
+                    <select name="select" id="select">
+                      <option value="1"> One paragraph </option>
+                      <option value="2"> Two paragraphs </option>
+                      <option value="3" selected> Three paragraphs </option>
+                      <option value="4"> Four paragraphs </option>
+                      <option value="5"> Five paragraphs </option>
+                    </select>
+                    <input type="submit" id="submit" style:"text-indent: -9999px; display: block;"></input>
+                  </form>
+                </div>
+              </div>
+          </div>
+       </section>
 
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-10 col-md-offset-1">
+             <div id="text-field"></div>
+           </div>
+         </div>
+      </div>
 
-        </header>
-
-
-        <div id="text-field"></div>
+      <section id="info">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="https://github.com/notapinetree/LoremSimpsum">  See how it works on Github. </a>
+            </div>
+          </div>
+        </div>
+      </section>
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
