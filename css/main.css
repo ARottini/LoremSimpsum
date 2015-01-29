@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-image: url('/Users/orenweingrod/Code/LoremSimpsum/clouds.jpg');
+  background-image: url('http://www.orenweingrod.com/loremsimpsum/clouds.jpg');
   background-size: cover;
 }
 

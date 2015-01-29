@@ -25,7 +25,7 @@ var quotes_array = ["My eyes! The goggles do nothing!",
 "Don't have a cow, man!",
 "Let the bears pay the bear tax! I pay the Homer tax!.",
 "Wow, my feet are soaked but my cuffs are bone dry! Everything's coming up Milhouse!",
-"MOMMMMM BART'S SMOKING",
+"MOMMMMM BART'S SMOKING!!!",
 "This is America. That means you can eat whatever you want, as long as you eat too much of it.",
 "I swore off reading after To Kill A Mockingbird taught me nothing about killing mockingbirds!",
 "The fingers you have used to dial are too fat. To obtain a special dialing wand, please mash the keypad with your palm now.",
@@ -59,7 +59,7 @@ $("#lorem-ipsum").submit(function(){
     var sentence_group = '';
     //Init variable that contains a group of sentences
       //For loop that builds sentence groups out of sentences, iterates from 0 - 4
-      for (var c = 0; c < quotes_array.length-4; c++) {
+      for (var c = 0; c < quotes_array.length-30; c++) {
         //For loop that builds
         var random_words = fisherYates(quotes_array);
         var sentence = random_words.toString().replace(/,/g, ' ');
